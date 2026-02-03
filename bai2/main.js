@@ -41,8 +41,6 @@ console.log("\n--- Câu 5: Có sản phẩm giá > 30.000.000 không? ---");
 console.log(hasExpensiveProduct); 
 
 // CÂU 6: Kiểm tra tất cả sp thuộc danh mục "Accessories" có đang bán không 
-// Bước 1: Lọc ra danh mục Accessories
-// Bước 2: Kiểm tra tất cả (every) có isAvailable = true không
 let accessories = products.filter(p => p.category === "Accessories");
 let allAccessoriesAvailable = accessories.every(p => p.isAvailable === true);
 
@@ -77,4 +75,5 @@ let activeProductNames = products
     .map(p => p.name);
 
 console.log("\n--- Câu 10: Tên các sp đang bán và còn hàng ---");
+
 console.log(activeProductNames);
